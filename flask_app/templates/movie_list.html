@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block lead  %}
+{% if movie_list %}
+    <ul>
+    {% for movie in movie_list %}
+        <li><a href="/movie_list/title/{{ movie.id }}/">{{ movie.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>게시글이 없습니다.</p>
+{% endif %}
+{% endblock  %}

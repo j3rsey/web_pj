@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block lead  %}
+
+<h1>{{ movie_i.title }}</h1>
+
+<img src='{{ movie_i.poster}}'> 
+
+<div>
+    관람등급 : {{ movie_i.ico_rating }}
+</div>
+<div>
+    평점 : {{ movie_i.score }}
+</div>
+<div>    
+    장르 : {{ movie_i.genre }}
+</div>
+<div>
+    감독 : {{ movie_i.directors }}
+</div>
+<div>
+    출연진 : {{ movie_i.actors }}
+</div>
+<div>
+   예매율 : {{ movie_i.advance_rate }}
+</div>
+<div>
+    상영시간 : {{ movie_i.runtime }}
+</div>
+<div>
+    개봉일자 : {{ movie_i.opening_date }}
+</div>
+
+{% endblock  %}
+
+
+
